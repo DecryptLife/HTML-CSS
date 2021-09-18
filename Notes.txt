@@ -1,0 +1,16 @@
+-> HTML - Hypertext Markup Language
+
+- Used to structure content on a web page (images, text, forms etc)
+- We structure content using HTML tags
+
+Some have both opening and closing tags like "<p></p>" and some have only opening tags <img>
+
+-> CSS - Cascading Style Sheets
+
+- works alongside HTML
+- Used to style web pages to make them look better
+ - Change colours, position, effects, font sizes etc
+
+
+ - index.html is the kind of like the default home page, when you run your website on the browser it looks for this file
+ 
