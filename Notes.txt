@@ -14,3 +14,56 @@ Some have both opening and closing tags like "<p></p>" and some have only openin
 
  - index.html is the kind of like the default home page, when you run your website on the browser it looks for this file
  - HTTP is the protocol we use to communicate with the servers to view websites
+
+-> Tags
+ - <strong> the text becomes bold
+ - <em> makes the text italic
+ - <small> makes the text smaller
+ - heading tags (h1 is biggest and h6 is the smallest) - size for texts
+ - ul - unordered list, it is a wrapper for <li> tags 
+ - ol - ordered list, it will be numbered
+ - <div> - division, divide the content into sections or group elements that belong together
+ - <br> - it breaks the line and it doesn't have closing tags
+ - <hr> - horizontal rule, it adds a line at that place
+ - <img src="" alt=""> - an image tag with attributes src(source) which gives path to image and alt which gives details of the image
+ - <a href=""> - anchor tag with href attribute. Anchor tag is used for navigation and href(hyperlink reference) gives the path
+ - <blockquote cite=""> - blockquote is used to quote something from somewhere
+                        - cite is an attribute which tells the source of the quote
+                        - it indents a little bit from the right of the page
+
+
+-> HTML forms
+    - <form action=""> tag to create a form, action is used in server side programming
+    - <input type="text" id="username" name=" "> - taking text input from the user, id should we unique ie username can't be the id of any other element. Id can be used for other tags too and not only forms
+    - id can be used to identify the element or as a hook in CSS or JavaScript
+    - <label for="id"> - gives label for the input field, id comes inside the for attribute
+    - name attribute is mainly used for server side programming but it can also be used for grouping together certain elements like radio buttons etc
+    - RADIO BUTTONS: in radio buttons if the names of all buttons are same then we can only choose one among them but if they are different we can choose multiple buttons
+        - radio button has also an option called value which will be sumbitted when we submit the form
+            ex: <input type="radio" name="name1" value="val">
+    - <select> - for dropdown menuu and each option will be inside the option tag of select
+    - <textarea> - used when we have a long text which isn't suitable to fit inside a text input, can be expanded
+    - placeholder attribute can be added to give hint to what needs to be written inside an input
+    - if there is any required input then add the required attribute
+
+CSS
+-> Style sheet - a list of CSS rules/rule sets
+    - it contains of selectors and declarations
+        - selectors -  these are html tags, classes, sections etc.
+        - declarations - the key-value pairs inside flower braces which sets properties or rules for selectors
+- adding css to html
+    1. adding style tag inside the head of each html page - not efficient when many pages are there
+    2. Create a separate stylesheet and link the pages to this sheet inside the head
+    3. <link rel="stylesheet" href=""> - used to link html pages to css. rel attribute is for the relation between the files
+- css web safe font - w3schools
+- line-height: vertical length between each lines
+- letter-spacing: space between each letter
+- column-count: specify the number and the content will be divided into that many number of columns
+- column-gap: the gap between the columns
+- border-width: the width of the border around the elements
+- border-style: style of the border
+- here border has multiple properties and since it is about border we can have them in a single line instead of multiple different lines
+
+-> List
+    - list-style-type: the circle side of list and by default they are known as disc
+    - text-shadow : takes in 3 values, offset to right of shadow, in vertical direction and the color of shadow
