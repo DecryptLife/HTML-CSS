@@ -13,4 +13,4 @@ Some have both opening and closing tags like "<p></p>" and some have only openin
 
 
  - index.html is the kind of like the default home page, when you run your website on the browser it looks for this file
- 
+ - HTTP is the protocol we use to communicate with the servers to view websites
