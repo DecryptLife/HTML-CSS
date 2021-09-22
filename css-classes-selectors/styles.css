@@ -1,0 +1,50 @@
+/* p.error {
+  color: red;
+}
+
+p.success {
+  color: #44eb44;
+}
+p.success.feedback {
+  border: 2px dashed #44eb44;
+}
+
+div#content {
+  background-color: #ebebeb;
+  padding: 20px;
+} */
+
+/* div .error {
+  color: purple;
+} */
+
+/* anything that includes DecryptLife will be styled*/
+/* a[href*="DecryptLife"] {
+  background-color: #3dd13d;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a[href*="google"] {
+  color: white;
+  background-color: red;
+  border: 2px solid blue;
+} */
+
+div {
+  color: lightcoral;
+  border: 1px solid gray;
+  margin: 40px;
+  font-weight: bold;
+}
+/* more specific selector */
+div p {
+  border: inherit;
+  margin: inherit;
+  color: crimson;
+}
+p {
+  color: orange;
+}
