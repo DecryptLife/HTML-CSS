@@ -146,3 +146,12 @@ CSS
 
 ** PSEUDO Elements
 - Difference is that pseudo elements help in injecting dynamic contents.
+
+
+********* RESPONSIVE DESIGN ***********
+- MEDIA QUERIES -> Tell the browser how to style an element at particular viewport dimensions
+- Viewport meta tag -> Tells the browser what width the viewport should be
+- Responsive images -> Only load smaller images for mobile devices
+- Mobile-First approach - We should plan the website for a smaller size first and the adapt to larger screens
+    - Fits less on them so only important ones are inserted
+    - Much easier 
