@@ -67,3 +67,82 @@ CSS
 -> List
     - list-style-type: the circle side of list and by default they are known as disc
     - text-shadow : takes in 3 values, offset to right of shadow, in vertical direction and the color of shadow
+
+- Inline elements: 
+    - Don't take up any more room than their content needs
+    - span, img, strong, em, a and more
+    - default of any element is Inline
+    - to make this block give css property as display:block;
+
+- Block-level Elements:
+    - Take up the whole width of a page regardless of content
+    - p,div,h1,h2,u,li and more
+    - each starts on a new line
+    - to make it inline give css property as display:inline;
+
+- block-level elements can have margin around the element but in inline margin will only be on the right and left and not on top and below
+- display: inline-block ; is better as it will give both properties
+
+-> CSS Classes and selectors
+    - when there are multiple similar tags and we want to apply style to just one of them then we have to assign a class to that particular tag
+    - in css we define a class by .classname and then assign the properties
+    - if there are multiple different tags with similar classname then if we want to apply a specific style to a particular tag
+            tag.classname{
+
+            }
+    - if we want to assign multiple classes inside one tag the we could add them inside the "" ie <p class = "class1 class2 class3">
+    - to access multiple classes in css => tag.class1.class2{
+                                            
+                                            }
+    - id hooks
+        - they are unique so no other id can have the same value in the same page
+        - to access id in css => #id{} or tag#id{}
+    
+    - when you want to access tags of a particular parent(ex:div) and not any other tags in CSS
+            parent tag{}, parent child1_tag child2_tag{}, div .classname{}
+    
+    - to find all tags with similar attribue in css => tag[attribute]{}
+
+    - tag[attribute=value]{properties} => here we look for all tags with the attribute mention in square bracket and the attribute with those values
+        - tag[attribute*=value] => all attributes in tag which includes the value in it will be styled
+        - tag[attribute$=value] => all attributes in tag which ends with the value in it will be styled
+
+- **The Cascade
+    - Inheritance
+        - HTML elements can inherit CSS properties that are applied to their parents 
+        - when we apply certain styles to the parent tag, the child tags also inherit them not all but some
+        - if we want those child tags who do not inherit those properties to inherit them below the parent style 
+                child_tag{
+                    property:inherit;
+                }
+            Here, we mention the properties which we want the child tag to inherit from the parent tag and then it is inherited
+        - when we define multiple tags the one that is defined last will be the most specific one and the properties in that would be applied
+
+- HTML 5 Semantics
+ - <main> - for the main content of a webpage, unique to that page
+ - <section> - defines a certain section of a webpage(e.g blog list, contact info)
+ - <article> - defines a bit of content which makes up an article(e.g a blog post)
+ - <aside> - defines some content related to something else (e.g similar blogs)
+ - <header> - for the header of a website - contains the nav, title, etc
+ - <footer> - for the footer of a website
+
+-> Position & Layout
+    - Static - default order, normal document flowe
+    - Relative - relative to its original position
+    - Fixed - relative to view port ie the top just below search, even when we scroll down the position doesn't change and continues to remain wherever it was designed
+    - Absolute - relatively to its closest parent
+    - Sticky - a mixture of Static and Fixed. Scroll till it like static and after it goes up it stays as fixed on view port
+
+- z-index -> all elements have a z-index 0. If we give a value greater than 0 to z-index property of any element that element will be pushed to front
+- whitespace:nowrap - when we give this to a parent element and then give inline-block nothing goes to next line 
+- box-sizing:border-box; - used when we have given max-width as 100% and a padding of some value. When we compress the content would get expanded to the padding. To include padding along with max-width we use this
+
+** PSEUDO Classes
+- Style elements when they're in particular state
+    - hover, focus, first child of a parent
+    - valid: HTML 5 comes with some inbuilt validation. valid helps in checking if the value is valid and if yes changes are made to the element
+    - first-child: when we want to style the first child of a parent alone
+    - pseudo classes link - https://www.w3schools.com/css/css_pseudo_classes.asp
+
+** PSEUDO Elements
+- Difference is that pseudo elements help in injecting dynamic contents.
