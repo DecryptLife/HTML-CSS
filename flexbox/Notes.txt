@@ -1,0 +1,3 @@
+What is flexbox?
+    - A CSS3 layout mode that provides an easy and clean way to rearrange items within a container
+
