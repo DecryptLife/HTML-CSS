@@ -155,3 +155,48 @@ CSS
 - Mobile-First approach - We should plan the website for a smaller size first and the adapt to larger screens
     - Fits less on them so only important ones are inserted
     - Much easier 
+
+
+
+*********** HTML 5 TAGS *****************
+
+HTML5 introduces more descriptive HTML tags.
+They are:
+    main - it helps search engines and other developers find the main content of your page
+    header -
+    footer -
+    nav - 
+    video - 
+    article - 
+    section - 
+
+
+
+target="_blank" is used to open any link in new tab
+
+-> Link to internal sections of the page with anchor elements
+We can do this by giving an id to any tag ie <h1 id=""> and to go to this section from an anchor tag
+<a href="#id"/>
+
+
+**** Turning image to a line
+    This can be done by nesting the img inside the anchor tag and also to turn the href to dead put the link as "#"
+    Ex: <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Three kittens running towards the camera."></a>
+
+
+    To keep a checkbox or radio box checked by default add the attribute "checked" in the input tag
+
+    https://fonts.google.com/
+    Google Fonts is a free library of web fonts that you can use in your CSS by referencing the font's URL.
+
+
+** There are several default fonts that are available in all browsers. These generic font families include monospace, serif, and sans-serif. When
+    one of them isn't available, we can tell browser to degrade to another font
+    Ex: font-family: Helvetica, sans-serif;
+
+
+**  To apply multiple classes to an element using its class attribute, by separating each class name with a space
+    <img class="class1 class2">
+
+However, an id is not reusable and should only be applied to one element. An id also has a higher specificity (importance) 
+than a class so if both are applied to the same element and have conflicting styles, the styles of the id will be applied.
