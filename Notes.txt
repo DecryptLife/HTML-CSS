@@ -225,3 +225,92 @@ element has specific CSS, you can use !important.
 ** To make use of inheritance, CSS variables are often defined in the :root element.
     - :root is a pesudo-class selector that matches the root element of the document, usually the html element.
     - By creating your variables in :root, they will be available globally and can be accessed from any other selector in style sheet
+    - when we create the variables in :root the value of that variable will be set for the whole page and these can be over-written by setting 
+        them again with a specific element
+
+
+** Media Query
+
+Sample: @media (condition) {
+    :tag {
+
+    }
+}
+
+************************************* APPLIED VISUAL DESIGN ***************************************
+
+text-align: justify; => causes all lines of texts except the last line to meet the left and right edges of
+the line box
+
+<u> - to underline
+<s> - to strikethrough
+<hr> - it adds a horizontal line across the width of its containing element. Can be used to define a change
+        in topic or to visually separate group of contents
+
+rgba stands for:
+  r = red
+  g = green
+  b = blue
+  a = alpha/level of opacity
+
+* box-shadow property applies one or more shadows to an element
+
+    The box-shadow property takes values for
+        - offset-x (how far to push the shadow horizontally from element)
+        - offset-y (how far to push the shadow vertically from element)
+        - blur-radius
+        - spread-radius
+        - color
+
+* text-transform property in CSS is used to change the appearance of the text
+    Different value of text-transform: lowercase, uppercase, capitalize, initial, inherit, none
+
+-> font-weight property sets how thick or thin characters are in a section of text
+
+-> line-height property cahnges the amount of vertical space that each line of text gets
+
+-> position : relative => each element in html has its own box and when we give any value to an element with position as
+                relative it will be with respect to the box
+   
+   position : absolute => with respect to the closest parent
+
+   position: fixed => It is a type of absolute positioning that locks an element relative to the browser window. Key Difference
+                between fixed and absolute positions is that an element with a fixed position won't move when the user scrolls.
+
+-> float: left/right;
+    Floating elements are removed from the normal flow of a document and pushed to either left or right of their containing parent element
+
+-> z-index property can specify the order of how elements are stacked on top of one another. It must be an integer and higher values for z-index 
+    property of an element moves it higher in the stack than those with lower values
+
+-> margin: auto; => this could also be used to center a block element, could also be used for image
+
+-> hsl()
+    hsl() stands for hue, saturation and lightness
+    Hue: It is what people generally think of as 'color'. In hsl(), hue uses a color wheel concept instead of the spectrum where the angle
+            of the color on the circle is given as a value between 0 and 360.
+    Saturation: It is the amount of gray in color. It is in terms of %
+    Lightness: It is the amount of white or black in a color. In terms of %, ranging from 0%(black) to 100%(white), where 50% is the normal color
+
+->  1. background: linear-gradient()
+    This helps to use color transitions
+    Ex: background: linear-gradient(gradient_direction, color 1, color 2, color 3, ...);
+    The first argument specifies the direction from which color transition starts - it can be stated as a degree, where 90deg makes a horizontal gradient (from left to right) 
+    and 45deg makes a diagonal gradient (from bottom left to top right). 
+
+    2. background: repeating-linear-gradient()
+    Major Difference is that it repeats the specified gradient pattern
+    Ex: 
+    background: repeating-linear-gradient(
+      45deg,
+      yellow 0px,
+      yellow 40px,
+      black 40px,
+      black 80px
+    );
+    
+    here it starts from bottom left to top right. 0-40px will be yellow and 40-80px will be black and this keeps repeating.
+
+-> transform: scale(value); => This will increase the scale of the element by value times
+-> transform: skewX/skewY(degree)
+
