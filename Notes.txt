@@ -200,3 +200,28 @@ We can do this by giving an id to any tag ie <h1 id=""> and to go to this sectio
 
 However, an id is not reusable and should only be applied to one element. An id also has a higher specificity (importance) 
 than a class so if both are applied to the same element and have conflicting styles, the styles of the id will be applied.
+
+** padding: top right bottom left;
+
+** In many situations, you will use CSS libraries. These may accidentally override your own CSS. So when you absolutely need to be sure that an 
+element has specific CSS, you can use !important.
+
+** To create a CSS property
+    - Inside a CSS selector create the property. To create such a property we should declare it using (--) ie --property-name
+    - Now if we want to use this property as a value for another property we have to enclose this property inside bracket surrounded with var keyword
+    Ex: 
+    h1 {
+        --property-name : value;
+    }
+    h5 {
+        property: var(--property-name)
+    }
+
+    The above can have a fallback value that is if there is any problem with displaying that value then the fallback value will work
+
+    ie property: var(--property-name, value)
+
+
+** To make use of inheritance, CSS variables are often defined in the :root element.
+    - :root is a pesudo-class selector that matches the root element of the document, usually the html element.
+    - By creating your variables in :root, they will be available globally and can be accessed from any other selector in style sheet
