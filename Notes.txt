@@ -314,3 +314,46 @@ rgba stands for:
 -> transform: scale(value); => This will increase the scale of the element by value times
 -> transform: skewX/skewY(degree)
 
+-> To animate an element we have to learn animation properties and @keyframes rules.
+    - animation properties control how the animation should behave
+    - @keyframes controls what happens during animation
+
+    Ex:
+    #anim {
+        animation-name: colorful;
+        animation-duration: 3s;
+    }
+    @keyframes colorful {
+      0% {
+        background-color: blue;
+      }
+      100% {
+        background-color: yellow;
+        }
+    }
+
+    When we give hove effect to a button and as the duration is over it reverts back to the original state
+    To prevent this we can give the "animation-fill-mode" as "forwards". So when we hover over the button the animation happens 
+    and then it stays and doesn't revert back.
+
+    Things we could do with animation:
+        - move the element up, down, left. right
+        - fading
+
+    * animation-iteration-count: no_of_iterations
+        This controls the number of times we would like to loop through the animation
+        To make it non-stop give the value as infinite
+    
+    * animation-timing-function: This property controls how quicky an animated element changes over the duration of the animation
+        - ease: starts slow, speeds up in middle and slows down again in the ends
+        - ease-out: quick in beginning, then slows down
+        - ease-in: slow in beginning, then speeds up at the ends
+        - linear: constant animation speed throughout
+
+    * CSS provides Bezier curves which gives finer control over how the animation plays out
+        The curve lives on a 1 by 1 coordinate system, where X-axis is duration of animation and y-axis is the change of animation
+            - Four main points in this system ie p0, p1, p2, p3
+
+        Ex: cubic-bezier(0.3, 0.4, 0.5, 1.6);   
+        Notice that value of y2 is more than 1. Bezier curve is mapped on a 1 by 1 coordinate system and it can only accept x values from 0 to 1
+        they y value can be set to numbers larger than one.
