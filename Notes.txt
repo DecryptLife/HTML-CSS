@@ -411,3 +411,37 @@ rgba stands for:
         - vh (viewport height): 3vh means 3 % of viewport height
         - vmin (viewport minimum): 70vmin means 70% of viewport's smaller dimension
         - vmax (viewport maximum): 30vm means 30% of viewport bigger dimension
+
+
+***************************** CSS FLEXBOX ****************************
+
+    - Placing the CSS property display:flex; on an element allows you to use other flex properties to build a responsive page
+        Adding the above property turns element into a flex container which helps to align children of that element into rows or columns. We can do this using flex-direction
+        Default value of flex-direction is row. Other two options of flex-direction is row-reverse and column-reverse
+
+    - Sometimes the flex items with a flex container do not fill all the space in the container. So we must tell CSS how to align and space out the flex items in a certain way
+        For this we make use of justify-content property
+
+    - align-items property is similar to justify-content. 
+        * justify-content aligns flex-items along main axis ie for rows main axis is a horizontal line and for columns it is vertical
+        * align-items aligns flex-items along the cross axis. For rows, it tells how to push items in the entire row up or down within the container
+            and for columns, how to push all the items left or right within the container
+                - flex-start, flex-end, center
+                - stretch - stretch the items to fill the flex container
+                - baseline -  aligns items to their baselines. Baseline is a text concepts, think of it as the line that the letter sits on
+
+    - flex-wrap: This property splits a flex item into multiple rows or columsn by default
+
+    - flex-shrink: This is used to shrink an item if flex container is too small. It takes numbers as values and higher the number greater will be the shrink
+
+    - flex-gow: exactly opposite to flex-shrink
+
+    - flex-basis: This property specifies the initial size of the item before CSS make adjustments with flex-shrink or flex-grow
+
+    - flex shortand property
+        we can use all these flex properties at once
+        Ex: flex: 1 0 10px; ie flex-grow: 1, flex-shrink: 0; and flex-bais: 10px;
+
+    - we can use the order property to re-arrange the items. order property takes in numbers as the value
+    
+    - align-self: This property allows us to adjust each item's alignment individually instead of taking them all at once. align-self accepts the same values as align-items and will override any value set by the align-items property
