@@ -387,3 +387,27 @@ rgba stands for:
                 This removes that element from the flow of your document meaning screen reader ignores it
 
     accesskey="" => this specifies a shortcut key to activate or bring focus to an element. Adding an accesskey attribue makes navigation easier for keyboard-only users
+
+    tabindex => certain elements, such as links and form controls, automatically recieve keyboard focus when a user tabs through a page. This same fucnctionality can be given 
+                to other elements, such as div, span and p by placing a tabindex="0" attribute on them. A negative tabindex value indicates the element is focusable but not reachable
+                Bonus - using tabindex also enables the CSS pseudo-class :focus to work on p tag.
+
+
+
+***************************** RESPONSIVE WEB DESIGN PRINCIPLES ****************************
+
+    -Media Queries are a new technique introduced in CSS3 that change the presentation of content based on different viewport sizes. The viewport is a user's visible area
+        of a web page, and is different depeneding on the device used to access the site.
+
+    - Making images Responsive with CSS is simple
+        Ex: img {
+            max-width: 100%;
+            height: auto;
+        }
+    max-width: 100% will make sure image is never wider than the container it is in and height: auto will make the image be kept in its original aspect ratio
+
+    Four different viewport units are:
+        - vw (viewport width): 10vw means 10% of viewport's width
+        - vh (viewport height): 3vh means 3 % of viewport height
+        - vmin (viewport minimum): 70vmin means 70% of viewport's smaller dimension
+        - vmax (viewport maximum): 30vm means 30% of viewport bigger dimension
