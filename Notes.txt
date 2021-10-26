@@ -445,3 +445,56 @@ rgba stands for:
     - we can use the order property to re-arrange the items. order property takes in numbers as the value
     
     - align-self: This property allows us to adjust each item's alignment individually instead of taking them all at once. align-self accepts the same values as align-items and will override any value set by the align-items property
+
+
+**************************** CSS GRID ***********************************
+
+    - To add some columns to the grid, use the grid-template-columns property on the grid container
+        Ex: grid-template-columns: 50px 50px;
+     This will give two columns that are 50px wide. Number of parameters given to the property indicates the number of columns in the grid and value of each parameter indicates width of each column
+
+    - To add some rows follow the similar method used for adding columns.
+
+    We can use absolute and relative units like px and em in CSS Grid to define size of rows and columns. Other units that could be used are:
+        - fr: sets the column or row to fraction of available space
+        - auto: sets the column or row to the width or height of its content automatically
+        - % : adjust the column or row to the percent width of its container
+
+    - To add gap between the columns we can use grid-column-gap
+
+    - To add gap between the rows we can use grid-row-gap
+
+    - grid-gap: Shorthand property for grid-row-gap and grid-column-gap. If only one value then both row and column gap will be given that value and if two, first value goes to row gap and second to column
+
+    - grid-column: This property is used to control the number of columns an item will consume. 
+        Ex: grid-column: 2/4; This tells that, the element wil consume the second and third column
+
+    - grid-row: This works similar to grid-column
+
+    - To align the content's position on a grid item we use justify-self property. Default value is stretch. Other values are start, center and end
+    - To align an item vertically we can use align-self property
+
+    - To align all the items horizontally in a CSS grid container we can use justify-items
+
+    - To group cells of the grid together into an area and give area a custon name we can use grid-template-areas
+    Ex: grid-template-areas: 
+            "header header header"
+            "advert content content"
+            "advert footer footer";
+
+        This groups the cells into four areas: header, advert, content and footer. Every word represents a cell and every pair of quoatation marks a row
+
+    - grid-area: you can place an item in your custom area by referencing the name you gave it.
+        Another method: grid-area: 1/1/2/4;
+            - horizontal line to start at/ vertical line to start at/ horizontal line to end at/ vertical line to end at
+
+        
+    - When we wanted to add more columns or rows we used grid-template-(columns/rows) to define the structure we had to enter that mnany values as parameters. When we wanted a grid of huge dimensions
+        it is not possible to list them out individually. This is where we can use the repeat(no_of_times, value);
+    
+    - Another built-in function to use with grid-template-(rows/columns) is minmax. It's used to limit the size of items when the grid container changes size
+
+    - repeat function comes with an option called auto-fill. This allows to insert automatically as many rows and columns of the desired size as possible depeneding on the size of the container
+
+    - auto-fit works almost identically to auto-fill. Only difference is that when the container's size exceed the size of all items combined, auto-fill keeps inserting empty rows or columns 
+        while auto-fit collapses those empty rows or columns and stretches your items to fit the container
